@@ -1,8 +1,6 @@
 import mongoose from "mongoose";
 import { DB_NAME } from "../constants.js";
-import dotenv from "dotenv"
-const link =process.env.MONGO_DB_URL
-console.log(link)
+const link = process.env.MONGO_DB_URL;
 const connectDB = async()=>{
     try {
         console.log(`${link}/${DB_NAME}`)
